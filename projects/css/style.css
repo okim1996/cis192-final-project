@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+
+/*
+Nav styles
+*/
+nav {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  min-height: 30px;
+  padding: 0px 10px;
+  position: fixed;
+  text-align: center;
+  margin-left: -1%;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: #00BFFF;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+  color: #00BFFF;
+}
+.nav a:hover {
+  color: yellow;
+}
+
+/*  
+***************header styles
+  */
+header {
+    border-radius: 5px;
+}
+
+header h1,.main-header {
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: #191970;
+    border-radius: 5px;
+    margin-bottom: 0%;
+    margin-top: -1%;
+    margin-left: -4%;
+    margin-right: -4%;
+}
+
+header h2 {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 0%;
+}
+
+header p {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+.header-wide {    
+    background-color: #00BFFF;
+    border-radius: 5px;
+}
+
+
+/*  
+********************main styles
+  */
+html {
+    background-color: gold;
+}
+
+h1,
+h2,
+legend,
+label,
+p {
+    font-family: 'Merriweather', serif;
+}
+
+h4 {
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+ 
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5%;
+    border-color: aqua;
+    border-radius: 5px;
+    background-color: #00BFFF;    
+}
+
+label {
+    text-decoration: underline;    
+}
+
+fieldset {
+    border-style: none;
+    background-color: #FF69B4;
+    border-radius: 5px;
+}
+
+.thick {
+    height: 5px;
+    background-color: black;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+.thin {
+    height: 2px;
+    background-color: black;
+    margin-top: 1%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.copyright {
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    font-size: .8em;
+}
+/*  
+********************Form styles
+  */
+
+#name,
+#email,
+#phone,
+#address,
+#city,
+#zip,
+#other-topics {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    border-style: double;
+    border-color: #00FF7F;
+    background-color: #DDA0DD;
+    text-align: left;
+    font-size: 1.3em;
+    font-style: italic;
+    color: #0000FF;
+    margin-bottom: 5%;
+}
+
+#name:focus,
+#email:focus,
+#phone:focus,
+#address:focus,
+#city:focus,
+#zip:focus,
+#other-topics:focus {
+    background-color: yellow;
+    font-style: normal;
+    border-color: #0000FF;
+    text-align: left;
+    transition-duration: .5s;
+}
+
+#state {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    border-style: double;
+    border-color: #00FF7F;
+    background-color: #DDA0DD;
+    text-align: left;
+    font-size: 1.3em;
+    font-style: italic;
+    color: yellow;
+    margin-bottom: 10%;
+}
+
+#state:focus {
+    transition-duration: .5s;
+    color: blue;
+    background-color: yellow;
+    font-style: normal;
+    border-color: #0000FF;
+    text-align: left;
+}
+
+#html,
+#css,
+#javascript,
+#formatHTML,
+#formatPlainText {
+    margin-bottom: 5%;
+}
+
+.radio-heading {
+    margin-top: 5%;
+}
+
+.topics {
+    text-decoration: none;
+    font-style: normal;
+}
+
+button {
+    margin-top: 10%;
+    background-color: magenta;
+    width: 100%;
+    border-radius: 10px;
+    border-color: orange;
+    padding-top: 10%;
+    padding-bottom: 7%;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: gold;
+    font-family: 'Merriweather', serif;
+}
+
+/*  
+****************media queries
+  */
+@media (min-width: 768px) {
+    .header-wide,
+    form {
+        max-width: 768px;
+        margin: auto;
+        width: 80%;
+    }
+    .nav {
+        max-width: 1200px;
+        padding: 0 30px;
+    }
+    .contact label {
+        margin-top: 5%;
+        float: left;
+        width: 20%;
+        margin-bottom: 5%;
+    }
+
+    #name,
+    #email,
+    #phone,
+    #address,
+    #city,
+    #state,
+    #zip {
+        float: right;
+        width: 75%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+}
+
+/*  
+***************Float Clearfix
+  */
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <!--<link rel="stylesheet" href="..\styles.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul class="nav">
+          <li class="name">Projects</li>
+          <li><a href="..\index.html">Home</a></li>
+          <li><a href="..\aboutMe.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>The Code Review</h1>
+        <div class="header-wide">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing 
+                right in your inbox</p>
+            <hr class="thick">
+            <hr class="thin">
+        </div>
+    </header>
+
+    <form action="#" method="POST">
+        <fieldset class="contact">
+            <legend>Contact Information</legend>
+            <label for="name">Full Name</label>
+            <input required type="text" id="name" placeholder="required" name="userName">
+            <label for="email">Email Address</label>
+            <input required type="email" id="email" placeholder="required" name="userEmail">
+            <label for="phone">Phone Number</label>
+            <input required type="tel" id="phone" placeholder="required" name="userPhone">
+            <label for="address">Street Address</label>
+            <input required type="text" id="address" placeholder="required" name="userAddress">
+            <label for="city">City</label>
+            <input required type="text" id="city" placeholder="required" name="userCity">
+            <label for="state">State</label>
+            <select id="state" name="userState">
+                <optgroup label="West Coast">
+                    <option value="Arizona">Arizona</option>
+                    <option value="California">California</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="Washington">Washington</option>
+                </optgroup>
+
+                <optgroup label="East Coast">
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Maine">Maine</option>
+                    <option value="New York">New York</option>
+                </optgroup>
+            </select>
+            <label for="zip">Zip Code</label>
+            <textarea placeholder="-Enter Text Here-" id="zip" name="userZip"></textarea>
+        </fieldset>
+
+        <hr class="thin">
+
+        <fieldset class="newsletter">
+            <legend>Newsletter</legend>
+
+            <!-- checkboxes -->
+            <h4>Select the newsletters you would like to recieve</h4>
+            <input type="checkbox" id="html" value="newsHTML" name="userCheckBox">
+            <label class="light" for="html">HTML News</label><br>
+            <input type="checkbox" id="css" value="newsCSS" name="userCheckBox">
+            <label class="light" for="css">CSS News</label><br>
+            <input type="checkbox" id="javascript" value="newsJavascript" name="userCheckBox">
+            <label class="light" for="javascript">Javascript News</label>
+            <!-- checkboxes -->
+
+            <!-- radio buttons -->
+            <h4 class="radio-heading">Newsletter format</h4>
+            <input type="radio" id="formatHTML" value="formatHTML" name="userRadio">
+            <label class="light" for="formatHTML">HTML</label><br>
+            <input type="radio" id="formatPlainText" value="formatPlainText" name="userRadio">
+            <label class="light" for="formatPlainText">Plain text</label>            
+            <!-- radio buttons -->
+
+            <label class="topics" for="other-topics"><br><br>Other topics you'd like to hear about</label>
+            <textarea placeholder="-Enter Text Here-" id="other-topics" name="userTopics"></textarea>
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+
+    </form>
+
+    <p class="copyright"><br>Copyright The Code Review</p>
+    
+</body>
+</html>
